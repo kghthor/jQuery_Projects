@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animation Example</title>
+    <script src="code\jworks.js"></script>
+</head>
+<body>
+    <div id="myElement" style="width: 100px; height: 100px; background-color: lightblue;">Click to Animate</div>
+    <script>
+        $(document).ready(function() {
+            $("#myElement").click(function() {
+                $(this).animate({ width: "200px", height: "200px", }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>

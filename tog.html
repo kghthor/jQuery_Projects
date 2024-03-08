@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toggle Example</title>
+    <script src="code\jworks.js"></script>
+</head>
+<body>
+    <button id="toggleButton">Toggle Element</button>
+    <div id="myElement" style="width: 100px; height: 100px; background-color: lightblue;">Toggle me!</div>
+
+    <script>
+        $(document).ready(function() {
+            $("#toggleButton").click(function() {
+                $("#myElement").toggle();
+            });
+        });
+    </script>
+</body>
+</html>

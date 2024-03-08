@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery click</title>
+    <script src="code\jworks.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("*").hide();//"#ob->for id(.bill for class) *->hide all"
+            });
+        });
+    </script>
+</head>
+<body>  
+    <h2>Something going to hidden</h2>
+    <h3>billy</h4>
+    <h4>helly</h4>
+        <p id="ob">hide me</p>
+        <p class="bil">Love all .</p>
+        <button>Click me</button>
+   
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delay Example</title>
+    <script src="code\jworks.js"></script>
+</head>
+<body>
+    <div id="myElement" style="width: 100px; height: 100px; background-color: lightblue;">Fade In and Out</div>
+    <script>
+        $(document).ready(function() {
+            $("#myElement").fadeOut().delay(1000).fadeIn();
+        });
+    </script>
+</body>
+</html>

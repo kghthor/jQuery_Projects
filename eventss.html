@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Examples</title>
+    <script src="code\jworks.js"></script>
+</head>
+<body>
+    <button id="clickButton">Click Me</button>
+    <div id="mouseOverDiv">Mouse Over Me</div>
+
+    <script>
+        $(document).ready(function() {
+            $("#clickButton").click(function() {
+                alert("Button clicked!");
+            });
+
+            $("#mouseOverDiv").mouseover(function() {
+                alert("Mouse over the element.");
+            });
+
+            $(document).keydown(function(event) {
+                alert("Key pressed: " + event.key);
+            });
+        });
+    </script>
+</body>
+</html>
